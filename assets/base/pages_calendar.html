@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <!-- build:process -->
+    <title><%= title %></title>
+    <link rel="shortcut icon" href="<%= pathFavicon %>" />
+    <!-- /build -->
+    <!-- build:section layout.meta --><!-- /build -->
+    <!-- start: MAIN CSS -->
+    <!-- build:style googleFonts --><!-- /build -->
+    <!-- build:style bundle --><!-- /build -->
+    <!-- build:style main --><!-- /build -->
+    <!-- build:style mainResponsive --><!-- /build -->
+    <!-- build:style print [media="print"] --><!-- /build -->
+    <!-- build:style theme.light [id="skin_color"] --><!-- /build -->
+    <!-- end: MAIN CSS -->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <link href="../../bower_components/bootstrap-modal/css/bootstrap-modal-bs3patch.css" rel="stylesheet" />
+    <link href="../../bower_components/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" />
+    <link href="../../bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" />
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+
+</head>
+<body>
+
+    <!-- build:section layout.header --><!-- /build -->
+    <!-- start: MAIN CONTAINER -->
+    <div class="main-container">
+        <!-- build:section layout.navbar --><!-- /build -->
+        <!-- start: PAGE -->
+        <div class="main-content">
+            <!-- build:section layout.panelConfiguration --><!-- /build -->
+            <div class="container">
+                <!-- start: PAGE HEADER -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- build:section layout.styleSelector --><!-- /build -->
+                        <!-- start: PAGE TITLE & BREADCRUMB -->
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="clip-file"></i>
+                                <a href="#">
+                                    Pages
+                                </a>
+                            </li>
+                            <li class="active">
+                                Calendar
+                            </li>
+                            <li class="search-box">
+                                <form class="sidebar-search">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Start Searching...">
+                                        <button class="submit">
+                                            <i class="clip-search-3"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ol>
+                        <div class="page-header">
+                            <h1>Calendar <small>with draggable and editable events </small></h1>
+                        </div>
+                        <!-- end: PAGE TITLE & BREADCRUMB -->
+                    </div>
+                </div>
+                <!-- end: PAGE HEADER -->
+                <!-- start: PAGE CONTENT -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- start: FULL CALENDAR PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-calendar"></i>
+                                Full Calendar
+                                <div class="panel-tools">
+                                    <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-refresh" href="#">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-expand" href="#">
+                                        <i class="fa fa-resize-full"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-close" href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-sm-9">
+                                    <div id='calendar'></div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4>Draggable categories</h4>
+                                    <div id="event-categories">
+                                        <div class="event-category label-green" data-class="label-green">
+                                            <i class="fa fa-move"></i>
+                                            Home
+                                        </div>
+                                        <div class="event-category label-default" data-class="label-default">
+                                            <i class="fa fa-move"></i>
+                                            Work
+                                        </div>
+                                        <div class="event-category label-purple" data-class="label-purple">
+                                            <i class="fa fa-move"></i>
+                                            Holidays
+                                        </div>
+                                        <div class="event-category label-orange" data-class="label-orange">
+                                            <i class="fa fa-move"></i>
+                                            Party
+                                        </div>
+                                        <div class="event-category label-yellow" data-class="label-yellow">
+                                            <i class="fa fa-move"></i>
+                                            Birthday
+                                        </div>
+                                        <div class="event-category label-teal" data-class="label-teal">
+                                            <i class="fa fa-move"></i>
+                                            Generic
+                                        </div>
+                                        <div class="event-category label-beige" data-class="label-beige">
+                                            <i class="fa fa-move"></i>
+                                            To Do
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" class="grey" id="drop-remove" />
+                                                Remove after drop
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end: FULL CALENDAR PANEL -->
+                    </div>
+                </div>
+                <!-- end: PAGE CONTENT-->
+            </div>
+        </div>
+        <!-- end: PAGE -->
+    </div>
+    <!-- end: MAIN CONTAINER -->
+    <!-- build:section layout.footer --><!-- /build -->
+    <!-- build:section layout.sidebar --><!-- /build -->
+
+    <div id="event-management" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                &times;
+            </button>
+            <h4 class="modal-title">Event Management</h4>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-light-grey">
+                Close
+            </button>
+            <button type="button" class="btn btn-danger remove-event no-display">
+                <i class='fa fa-trash-o'></i> Delete Event
+            </button>
+            <button type='submit' class='btn btn-success save-event'>
+                <i class='fa fa-check'></i> Save
+            </button>
+        </div>
+    </div>
+
+    <!-- start: MAIN JAVASCRIPTS -->
+    <!--[if lt IE 9]>
+                <script src="../../bower_components/respond/dest/respond.min.js"></script>
+                <script src="../../bower_components/Flot/excanvas.min.js"></script>
+                <script src="../../bower_components/jquery-1.x/dist/jquery.min.js"></script>
+                <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <!-- build:script resurces.jQuery --><!-- /build -->
+    <!--<![endif]-->
+    <!-- build:script bundle --><!-- /build -->
+    <!-- build:script main --><!-- /build -->
+    <!-- end: MAIN JAVASCRIPTS -->
+    <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <script src="../../bower_components/moment/min/moment.min.js"></script>
+    <script src="../../bower_components/bootstrap-modal/js/bootstrap-modal.js"></script>
+    <script src="../../bower_components/bootstrap-modal/js/bootstrap-modalmanager.js"></script>
+    <script src="assets/plugin/jquery-ui.custom.min.js"></script>
+    <script src="../../bower_components/jqueryui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <script src="../../bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="assets/js/min/form-calendar.min.js"></script>
+    <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+            Calendar.init();
+        });
+    </script>
+
+</body>
+</html>

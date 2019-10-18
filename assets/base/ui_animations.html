@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <!-- build:process -->
+    <title><%= title %></title>
+    <link rel="shortcut icon" href="<%= pathFavicon %>" />
+    <!-- /build -->
+    <!-- build:section layout.meta --><!-- /build -->
+    <!-- start: MAIN CSS -->
+    <!-- build:style googleFonts --><!-- /build -->
+    <!-- build:style bundle --><!-- /build -->
+    <!-- build:style main --><!-- /build -->
+    <!-- build:style mainResponsive --><!-- /build -->
+    <!-- build:style print [media="print"] --><!-- /build -->
+    <!-- build:style theme.light [id="skin_color"] --><!-- /build -->
+    <!-- end: MAIN CSS -->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <link href="../../bower_components/animate.css/animate.min.css" rel="stylesheet" />
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+
+</head>
+<body>
+
+    <!-- build:section layout.header --><!-- /build -->
+    <!-- start: MAIN CONTAINER -->
+    <div class="main-container">
+        <!-- build:section layout.navbar --><!-- /build -->
+        <!-- start: PAGE -->
+        <div class="main-content">
+            <!-- build:section layout.panelConfiguration --><!-- /build -->
+            <div class="container">
+                <!-- start: PAGE HEADER -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- build:section layout.styleSelector --><!-- /build -->
+                        <!-- start: PAGE TITLE & BREADCRUMB -->
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="clip-cog-2"></i>
+                                <a href="#">
+                                    UI Lab
+                                </a>
+                            </li>
+                            <li class="active">
+                                CSS3 Animation
+                            </li>
+                            <li class="search-box">
+                                <form class="sidebar-search">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Start Searching...">
+                                        <button class="submit">
+                                            <i class="clip-search-3"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ol>
+                        <div class="page-header">
+                            <h1>Animate.css <small>Just-add-water CSS animation</small></h1>
+                        </div>
+                        <!-- end: PAGE TITLE & BREADCRUMB -->
+                    </div>
+                </div>
+                <!-- end: PAGE HEADER -->
+                <!-- start: PAGE CONTENT -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="alert alert-info">
+                            animate.css is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
+                        </div>
+                        <div class="animation-container center">
+                            <div id="object">
+                                <i class="clip-clip"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="animation-buttons center">
+                            <h2>Entrances</h2>
+                            <a class="btn btn-teal" id="slideUpBtn" href="#">
+                                Slide Up ↑
+                            </a>
+                            <a class="btn btn-teal" id="slideDownBtn" href="#">
+                                Slide Down ↓
+                            </a>
+                            <a class="btn btn-teal" id="slideLeftBtn" href="#">
+                                Slide Left ←
+                            </a>
+                            <a class="btn btn-teal" id="slideRightBtn" href="#">
+                                Slide Right →
+                            </a>
+                            <a class="btn btn-teal" id="expandUpBtn" href="#">
+                                Expand Up ↑
+                            </a>
+                            <a class="btn btn-teal" id="fadeInBtn" href="#">
+                                Fade In
+                            </a>
+                            <a class="btn btn-teal" id="expandOpenBtn" href="#">
+                                Expand Open
+                            </a>
+                            <a class="btn btn-teal" id="bigEntranceBtn" href="#">
+                                Big Entrance
+                            </a>
+                            <a class="btn btn-teal" id="flipBtn" href="#">
+                                Flip
+                            </a>
+                            <h2>Misc</h2>
+                            <a class="btn btn-teal" id="bounceBtn" href="#">
+                                Bounce
+                            </a>
+                            <a class="btn btn-teal" id="pulseBtn" href="#">
+                                Pulse
+                            </a>
+                            <a class="btn btn-teal" id="shakeBtn" href="#">
+                                Shake
+                            </a>
+                            <a class="btn btn-teal" id="wobbleBtn" href="#">
+                                Wobble
+                            </a>
+                            <a class="btn btn-teal" id="bounceInUpBtn" href="#">
+                                Bounce In Up ↑
+                            </a>
+                            <a class="btn btn-teal" id="bounceInDownBtn" href="#">
+                                Bounce In Down ↓
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: PAGE CONTENT-->
+            </div>
+        </div>
+        <!-- end: PAGE -->
+    </div>
+    <!-- end: MAIN CONTAINER -->
+    <!-- build:section layout.footer --><!-- /build -->
+    <!-- build:section layout.sidebar --><!-- /build -->
+    <!-- start: MAIN JAVASCRIPTS -->
+    <!--[if lt IE 9]>
+            <script src="../../bower_components/respond/dest/respond.min.js"></script>
+            <script src="../../bower_components/Flot/excanvas.min.js"></script>
+            <script src="../../bower_components/jquery-1.x/dist/jquery.min.js"></script>
+            <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <!-- build:script resurces.jQuery --><!-- /build -->
+    <!--<![endif]-->
+    <!-- build:script bundle --><!-- /build -->
+    <!-- build:script main --><!-- /build -->
+    <!-- end: MAIN JAVASCRIPTS -->
+    <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <script src="assets/js/min/ui-animation.min.js"></script>
+    <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+            Animation.init();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <!-- build:process -->
+    <title><%= title %></title>
+    <link rel="shortcut icon" href="<%= pathFavicon %>" />
+    <!-- /build -->
+    <!-- build:section layout.meta --><!-- /build -->
+    <!-- start: MAIN CSS -->
+    <!-- build:style googleFonts --><!-- /build -->
+    <!-- build:style bundle --><!-- /build -->
+    <!-- build:style main --><!-- /build -->
+    <!-- build:style mainResponsive --><!-- /build -->
+    <!-- build:style print [media="print"] --><!-- /build -->
+    <!-- build:style theme.light [id="skin_color"] --><!-- /build -->
+    <!-- end: MAIN CSS -->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+
+</head>
+<body class="lock-screen">
+
+    <div class="main-ls">
+        <div class="logo">
+            CLIP<i class="clip-clip"></i>ONE
+        </div>
+        <div class="box-ls">
+            <img alt="" src="assets/images/avatar-1-xl.jpg" />
+            <div class="user-info">
+                <h1><i class="fa fa-lock"></i> Peter Clark</h1>
+                <span>peter@example.com</span>
+                <span><em>Please enter your password to un-lock.</em></span>
+                <form action="index.html">
+                    <div class="input-group">
+                        <input type="text" placeholder="Password" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-blue" type="submit">
+                                <i class="fa fa-chevron-right"></i>
+                            </button>
+                        </span>
+                    </div>
+                    <div class="relogin">
+                        <a href="login_example1.html">
+                            Not Peter Clark?
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <script>document.write(new Date().getFullYear())</script> &copy; clip-one by cliptheme.
+        </div>
+    </div>
+
+
+
+    <!-- start: MAIN JAVASCRIPTS -->
+    <!--[if lt IE 9]>
+             <script src="../../bower_components/respond/dest/respond.min.js"></script>
+             <script src="../../bower_components/Flot/excanvas.min.js"></script>
+             <script src="../../bower_components/jquery-1.x/dist/jquery.min.js"></script>
+             <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <!-- build:script resurces.jQuery --><!-- /build -->
+    <!--<![endif]-->
+    <!-- build:script bundle --><!-- /build -->
+    <!-- build:script main --><!-- /build -->
+    <!-- end: MAIN JAVASCRIPTS -->
+    <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+.ocultar {
+	display: none !important;
+}
+.scrollDiv {
+	overflow: scroll;
+}
+    
+.alert { 
+	margin-bottom: 0px !important; 
+}
+
+.mause_over_link:hover { 
+  
+  	color: #2196F3 !important;
+	cursor: pointer !important;
+
+}
+
+.whipe_nowrap td {
+	white-space: nowrap;
+}

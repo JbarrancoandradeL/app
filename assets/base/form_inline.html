@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <!-- build:process -->
+    <title><%= title %></title>
+    <link rel="shortcut icon" href="<%= pathFavicon %>" />
+    <!-- /build -->
+    <!-- build:section layout.meta --><!-- /build -->
+    <!-- start: MAIN CSS -->
+    <!-- build:style googleFonts --><!-- /build -->
+    <!-- build:style bundle --><!-- /build -->
+    <!-- build:style main --><!-- /build -->
+    <!-- build:style mainResponsive --><!-- /build -->
+    <!-- build:style print [media="print"] --><!-- /build -->
+    <!-- build:style theme.light [id="skin_color"] --><!-- /build -->
+    <!-- end: MAIN CSS -->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+
+</head>
+<body>
+
+    <!-- build:section layout.header --><!-- /build -->
+    <!-- start: MAIN CONTAINER -->
+    <div class="main-container">
+        <!-- build:section layout.navbar --><!-- /build -->
+        <!-- start: PAGE -->
+        <div class="main-content">
+            <!-- build:section layout.panelConfiguration --><!-- /build -->
+            <div class="container">
+                <!-- start: PAGE HEADER -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- build:section layout.styleSelector --><!-- /build -->
+                        <!-- start: PAGE TITLE & BREADCRUMB -->
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="clip-pencil"></i>
+                                <a href="#">
+                                    Forms
+                                </a>
+                            </li>
+                            <li class="active">
+                                Inline Editor
+                            </li>
+                            <li class="search-box">
+                                <form class="sidebar-search">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Start Searching...">
+                                        <button class="submit">
+                                            <i class="clip-search-3"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ol>
+                        <div class="page-header">
+                            <h1>Inline Editor <small>inline editor sample</small></h1>
+                        </div>
+                        <!-- end: PAGE TITLE & BREADCRUMB -->
+                    </div>
+                </div>
+                <!-- end: PAGE HEADER -->
+                <!-- start: PAGE CONTENT -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- start: INLINE EDITOR PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-external-link-square"></i>
+                                Inline Editor
+                                <div class="panel-tools">
+                                    <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-refresh" href="#">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-expand" href="#">
+                                        <i class="fa fa-resize-full"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-close" href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="alert alert-info">
+                                    Click on the different parts of the following sample (including titles) to edit them in-place.
+                                </div>
+                                <div class="demo-main">
+                                    <div id="inline-container">
+                                        <div id="inline-header" class="row">
+                                            <div id="inline-headerLeft" class="col-sm-6">
+                                                <h2 id="inline-sampleTitle" contenteditable="true">Vehicula vitae, imperdiet vel</h2>
+                                                <h3 contenteditable="true">
+                                                    Lorem ipsum dolor sit amet dolor duis blandit vestibulum faucibus a,
+                                                    tortor.
+                                                </h3>
+                                            </div>
+                                            <div id="inline-headerRight" class="col-sm-6">
+                                                <div contenteditable="true">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+                                                        pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
+                                                    </p>
+                                                    <p>
+                                                        Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a,
+                                                        convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla
+                                                        imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div id="inline-columns" class="row">
+                                            <div id="inline-column1" class="col-sm-6">
+                                                <div contenteditable="true">
+                                                    <h3>Fusce vitae porttitor</h3>
+                                                    <p>
+                                                        <strong>
+                                                            Lorem ipsum dolor sit amet dolor. Duis blandit vestibulum faucibus a,
+                                                            tortor.
+                                                        </strong>
+                                                    </p>
+                                                    <p>
+                                                        Proin nunc justo felis mollis tincidunt, risus risus pede, posuere cubilia Curae, Nullam
+                                                        euismod, enim. Etiam nibh ultricies dolor ac dignissim erat volutpat. Vivamus fermentum
+                                                        <a href="http://ckeditor.com/">
+                                                            nisl nulla sem in
+                                                        </a>
+                                                        metus. Maecenas wisi. Donec nec
+                                                        erat volutpat.
+                                                    </p>
+                                                    <blockquote>
+                                                        <p>
+                                                            Fusce vitae porttitor a, euismod convallis nisl, blandit risus tortor,
+                                                            pretium.Vehicula vitae, imperdiet vel, ornare enim vel sodales rutrum
+                                                        </p>
+                                                    </blockquote>
+                                                    <blockquote>
+                                                        <p>
+                                                            Libero nunc, rhoncus ante ipsum non ipsum. Nunc eleifend pede turpis id
+                                                            sollicitudin fringilla. Phasellus ultrices, velit ac arcu.
+                                                        </p>
+                                                    </blockquote>
+                                                    <p>
+                                                        Pellentesque nunc. Donec suscipit erat. Pellentesque habitant morbi tristique
+                                                        ullamcorper.
+                                                    </p>
+                                                    <p>
+                                                        <strike>Mauris mattis feugiat lectus nec mauris. Nullam vitae ante.</strike>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div id="inline-column2" class="col-sm-6">
+                                                <div contenteditable="true">
+                                                    <h3>Integer condimentum sit amet</h3>
+                                                    <p>
+                                                        <strong>Aenean nonummy a, mattis varius. Cras aliquet.</strong>Praesent
+                                                        <a href="http://ckeditor.com/">
+                                                            magna non mattis ac, rhoncus nunc
+                                                        </a>
+                                                        , rhoncus eget,
+                                                        cursus pulvinar mollis.
+                                                    </p>
+                                                    <p>
+                                                        Proin id nibh. Sed eu libero posuere sed, lectus. Phasellus dui gravida gravida feugiat
+                                                        mattis ac, felis.
+                                                    </p>
+                                                    <p>
+                                                        Integer condimentum sit amet, tempor elit odio, a dolor non ante at sapien. Sed ac
+                                                        lectus. Nulla ligula quis eleifend mi, id leo velit pede cursus arcu id nulla ac lectus.
+                                                        Phasellus vestibulum. Nunc viverra enim quis diam.
+                                                    </p>
+                                                    <h3>Praesent wisi accumsan sit amet nibh</h3>
+                                                    <p>
+                                                        Donec ullamcorper, risus tortor, pretium porttitor. Morbi quam quis lectus non leo.
+                                                    </p>
+                                                    <p style="margin-left: 40px;">
+                                                        Integer faucibus scelerisque. Proin faucibus at, aliquet
+                                                        vulputate, odio at eros. Fusce
+                                                        <a href="http://ckeditor.com/">
+                                                            gravida, erat vitae
+                                                            augue
+                                                        </a>
+                                                        . Fusce urna fringilla gravida.
+                                                    </p>
+                                                    <p>
+                                                        In hac habitasse platea dictumst. Praesent wisi accumsan sit amet nibh. Maecenas orci
+                                                        luctus a, lacinia quam sem, posuere commodo, odio condimentum tempor, pede semper risus.
+                                                        Suspendisse pede. In hac habitasse platea dictumst. Nam sed laoreet sit amet erat.
+                                                        Integer.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end: INLINE EDITOR PANEL -->
+                    </div>
+                </div>
+                <!-- end: PAGE CONTENT-->
+            </div>
+        </div>
+        <!-- end: PAGE -->
+    </div>
+    <!-- end: MAIN CONTAINER -->
+    <!-- build:section layout.footer --><!-- /build -->
+    <!-- build:section layout.sidebar --><!-- /build -->
+
+
+
+    <!-- start: MAIN JAVASCRIPTS -->
+    <!--[if lt IE 9]>
+            <script src="../../bower_components/respond/dest/respond.min.js"></script>
+            <script src="../../bower_components/Flot/excanvas.min.js"></script>
+            <script src="../../bower_components/jquery-1.x/dist/jquery.min.js"></script>
+            <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <!-- build:script resurces.jQuery --><!-- /build -->
+    <!--<![endif]-->
+    <!-- build:script bundle --><!-- /build -->
+    <!-- build:script main --><!-- /build -->
+    <!-- end: MAIN JAVASCRIPTS -->
+    <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <script src="../../bower_components/ckeditor/ckeditor.js"></script>
+    <script src="../../bower_components/ckeditor/adapters/jquery.js"></script>
+    <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+        });
+    </script>
+
+</body>
+</html>

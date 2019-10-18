@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <!-- build:process -->
+    <title><%= title %></title>
+    <link rel="shortcut icon" href="<%= pathFavicon %>" />
+    <!-- /build -->
+    <!-- build:section layout.meta --><!-- /build -->
+    <!-- start: MAIN CSS -->
+    <!-- build:style googleFonts --><!-- /build -->
+    <!-- build:style bundle --><!-- /build -->
+    <!-- build:style main --><!-- /build -->
+    <!-- build:style mainResponsive --><!-- /build -->
+    <!-- build:style print [media="print"] --><!-- /build -->
+    <!-- build:style theme.light [id="skin_color"] --><!-- /build -->
+    <!-- end: MAIN CSS -->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <link href="../../bower_components/Jcrop/css/jquery.Jcrop.min.css" rel="stylesheet" />
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+
+</head>
+<body>
+
+    <!-- build:section layout.header --><!-- /build -->
+    <!-- start: MAIN CONTAINER -->
+    <div class="main-container">
+        <!-- build:section layout.navbar --><!-- /build -->
+        <!-- start: PAGE -->
+        <div class="main-content">
+            <!-- build:section layout.panelConfiguration --><!-- /build -->
+            <div class="container">
+                <!-- start: PAGE HEADER -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- build:section layout.styleSelector --><!-- /build -->
+                        <!-- start: PAGE TITLE & BREADCRUMB -->
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="clip-pencil"></i>
+                                <a href="#">
+                                    Forms
+                                </a>
+                            </li>
+                            <li class="active">
+                                Image Cropping
+                            </li>
+                            <li class="search-box">
+                                <form class="sidebar-search">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Start Searching...">
+                                        <button class="submit">
+                                            <i class="clip-search-3"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ol>
+                        <div class="page-header">
+                            <h1>Image Cropping <small>image cropping example</small></h1>
+                        </div>
+                        <!-- end: PAGE TITLE & BREADCRUMB -->
+                    </div>
+                </div>
+                <!-- end: PAGE HEADER -->
+                <!-- start: PAGE CONTENT -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- start: BASIC HANDLER PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-external-link-square"></i>
+                                Basic Handler
+                                <div class="panel-tools">
+                                    <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-refresh" href="#">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-expand" href="#">
+                                        <i class="fa fa-resize-full"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-close" href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-body crop-image">
+                                <div class="alert alert-success">
+                                    <p>
+                                        <b>An example with a basic event handler.</b> Here we've tied
+                                        several form values together with a simple event handler invocation.
+                                        The result is that the form values are updated in real-time as
+                                        the selection is changed using Jcrop's <em>onChange</em> handler.
+                                    </p>
+                                    <p>
+                                        That's how easily Jcrop can be integrated into a traditional web form!
+                                    </p>
+                                </div>
+                                <!-- This is the image we're attaching Jcrop to -->
+                                <img src="assets/images/sago.jpg" id="target" alt="[Jcrop Example]" />
+                                <!-- This is the form that our event handler fills -->
+                                <form id="coords"
+                                      class="coords"
+                                      onsubmit="return false;"
+                                      action="http://example.com/post.php">
+                                    <div class="inline-labels">
+                                        <label>
+                                            X1
+                                            <input type="text" size="4" id="x1" name="x1" />
+                                        </label>
+                                        <label>
+                                            Y1
+                                            <input type="text" size="4" id="y1" name="y1" />
+                                        </label>
+                                        <label>
+                                            X2
+                                            <input type="text" size="4" id="x2" name="x2" />
+                                        </label>
+                                        <label>
+                                            Y2
+                                            <input type="text" size="4" id="y2" name="y2" />
+                                        </label>
+                                        <label>
+                                            W
+                                            <input type="text" size="4" id="w" name="w" />
+                                        </label>
+                                        <label>
+                                            H
+                                            <input type="text" size="4" id="h" name="h" />
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end: BASIC HANDLER PANEL -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- start: PREVIEW PANE PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-external-link-square"></i>
+                                Preview Pane
+                                <div class="panel-tools">
+                                    <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-refresh" href="#">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-expand" href="#">
+                                        <i class="fa fa-resize-full"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-close" href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-body crop-image">
+                                <div class="alert alert-success">
+                                    <p>
+                                        <b>An example implementing a preview pane.</b>
+                                        Obviously the most visual demo, the preview pane is accomplished
+                                        entirely outside of Jcrop with a simple jQuery-flavored callback.
+                                        This type of interface could be useful for creating a thumbnail
+                                        or avatar. The onChange event handler is used to update the
+                                        view in the preview pane.
+                                    </p>
+                                </div>
+                                <img src="assets/images/pool.jpg" id="target2" alt="[Jcrop Example]" />
+                                <div id="preview-pane">
+                                    <div class="preview-container">
+                                        <img src="assets/images/pool.jpg" class="jcrop-preview" alt="Preview" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end: PREVIEW PANE PANEL -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- start: ANIMATION/TRANSITION PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-external-link-square"></i>
+                                Animations + Transitions
+                                <div class="panel-tools">
+                                    <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-refresh" href="#">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-expand" href="#">
+                                        <i class="fa fa-resize-full"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-close" href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-body crop-image">
+                                <div class="alert alert-success">
+                                    <p>
+                                        <b>Animation/Transitions.</b>
+                                        Demonstration of animateTo API method and transitions for bgColor
+                                        and bgOpacity options. Color fading requires inclusion of John Resig's
+                                        jQuery
+                                        <a href="http://plugins.jquery.com/project/color">
+                                            Color
+                                            Animations
+                                        </a>
+                                        plugin. If it is not included, colors will not fade.
+                                    </p>
+                                </div>
+                                <div class="alert alert-warning" id="shadetxt" style="display:none; color:#900;">
+                                    <b>Experimental shader active.</b>
+                                    Jcrop now includes a shading mode that facilitates building
+                                    better transparent Jcrop instances. The experimental shader is less
+                                    robust than Jcrop's default shading method and should only be
+                                    used if you require this functionality.
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <img src="assets/images/sago.jpg" id="target3" alt="Jcrop Image" />
+                                    </div>
+                                    <div class="col-md-3" id="interface">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="fadetog" class="grey" checked="checked" />
+                                            Enable fading (bgFade: true)
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="shadetog" class="grey" />
+                                            Use experimental shader (shade: true)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end: ANIMATION/TRANSITION PANEL -->
+                    </div>
+                </div>
+                <!-- end: PAGE CONTENT-->
+            </div>
+        </div>
+        <!-- end: PAGE -->
+    </div>
+    <!-- end: MAIN CONTAINER -->
+    <!-- build:section layout.footer --><!-- /build -->
+    <!-- build:section layout.sidebar --><!-- /build -->
+
+
+
+    <!-- start: MAIN JAVASCRIPTS -->
+    <!--[if lt IE 9]>
+            <script src="../../bower_components/respond/dest/respond.min.js"></script>
+            <script src="../../bower_components/Flot/excanvas.min.js"></script>
+            <script src="../../bower_components/jquery-1.x/dist/jquery.min.js"></script>
+            <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <!-- build:script resurces.jQuery --><!-- /build -->
+    <!--<![endif]-->
+    <!-- build:script bundle --><!-- /build -->
+    <!-- build:script main --><!-- /build -->
+    <!-- end: MAIN JAVASCRIPTS -->
+    <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <script src="../../bower_components/Jcrop/js/jquery.Jcrop.min.js"></script>
+    <script src="../../bower_components/Jcrop/js/jquery.color.js"></script>
+    <script src="assets/js/min/form-image-cropping.min.js"></script>
+    <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+            ImageCropping.init();
+        });
+    </script>
+
+</body>
+</html>

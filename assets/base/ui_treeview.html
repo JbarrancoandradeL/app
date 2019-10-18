@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <!-- build:process -->
+    <title><%= title %></title>
+    <link rel="shortcut icon" href="<%= pathFavicon %>" />
+    <!-- /build -->
+    <!-- build:section layout.meta --><!-- /build -->
+    <!-- start: MAIN CSS -->
+    <!-- build:style googleFonts --><!-- /build -->
+    <!-- build:style bundle --><!-- /build -->
+    <!-- build:style main --><!-- /build -->
+    <!-- build:style mainResponsive --><!-- /build -->
+    <!-- build:style print [media="print"] --><!-- /build -->
+    <!-- build:style theme.light [id="skin_color"] --><!-- /build -->
+    <!-- end: MAIN CSS -->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <link href="assets/plugin/jquery-ui.custom.min.css" rel="stylesheet" />
+    <link href="../../bower_components/jquery.dynatree/dist/skin-vista/ui.dynatree.css" rel="stylesheet" />
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+
+</head>
+<body>
+
+    <!-- build:section layout.header --><!-- /build -->
+    <!-- start: MAIN CONTAINER -->
+    <div class="main-container">
+        <!-- build:section layout.navbar --><!-- /build -->
+        <!-- start: PAGE -->
+        <div class="main-content">
+            <!-- build:section layout.panelConfiguration --><!-- /build -->
+            <div class="container">
+                <!-- start: PAGE HEADER -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- build:section layout.styleSelector --><!-- /build -->
+                        <!-- start: PAGE TITLE & BREADCRUMB -->
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="clip-cog-2"></i>
+                                <a href="#">
+                                    UI Lab
+                                </a>
+                            </li>
+                            <li class="active">
+                                Treeview
+                            </li>
+                            <li class="search-box">
+                                <form class="sidebar-search">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Start Searching...">
+                                        <button class="submit">
+                                            <i class="clip-search-3"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ol>
+                        <div class="page-header">
+                            <h1>Treeview <small>tree view control with support for checkboxes, drag'n'drop, and lazy loading</small></h1>
+                        </div>
+                        <!-- end: PAGE TITLE & BREADCRUMB -->
+                    </div>
+                </div>
+                <!-- end: PAGE HEADER -->
+                <!-- start: PAGE CONTENT -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- start: DEFAULT TREE PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-sitemap"></i>
+                                Default Tree
+                                <div class="panel-tools">
+                                    <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-refresh" href="#">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-expand" href="#">
+                                        <i class="fa fa-resize-full"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-close" href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    This tree uses default options. It is initalized from a hidden <code>ul</code> element on this page.
+                                </p>
+                                <div id="tree">
+                                    <ul id="treeData" style="display: none;">
+                                        <li id="id1" title="Look, a tool tip!">
+                                            item1 with key and tooltip
+                                        <li id="id2">
+                                            item2
+                                        <li id="id3" class="folder">
+                                            Folder with some children
+                                            <ul>
+                                                <li id="id3.1">
+                                                    Sub-item 3.1
+                                                    <ul>
+                                                        <li id="id3.1.1">
+                                                            Sub-item 3.1.1
+                                                        <li id="id3.1.2">
+                                                            Sub-item 3.1.2
+                                                    </ul>
+                                                <li id="id3.2">
+                                                    Sub-item 3.2
+                                                    <ul>
+                                                        <li id="id3.2.1">
+                                                            Sub-item 3.2.1
+                                                        <li id="id3.2.2">
+                                                            Sub-item 3.2.2
+                                                    </ul>
+                                            </ul>
+                                        <li id="id4" class="expanded">
+                                            Document with some children (expanded on init)
+                                            <ul>
+                                                <li id="id4.1" class="active focused">
+                                                    Sub-item 4.1 (active and focus on init)
+                                                    <ul>
+                                                        <li id="id4.1.1">
+                                                            Sub-item 4.1.1
+                                                        <li id="id4.1.2">
+                                                            Sub-item 4.1.2
+                                                    </ul>
+                                                <li id="id4.2">
+                                                    Sub-item 4.2
+                                                    <ul>
+                                                        <li id="id4.2.1">
+                                                            Sub-item 4.2.1
+                                                        <li id="id4.2.2">
+                                                            Sub-item 4.2.2
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end: DEFAULT TREE PANEL -->
+                    </div>
+                    <div class="col-md-6">
+                        <!-- start: INIT FROM JS OBJECT PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-sitemap"></i>
+                                Init from JS object
+                                <div class="panel-tools">
+                                    <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-refresh" href="#">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-expand" href="#">
+                                        <i class="fa fa-resize-full"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-close" href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    This sample initializes the tree from a JavaScript object. An onActivate handler brings up an alert box when a node is selected.
+                                </p>
+                                <div id="tree2"></div>
+                            </div>
+                        </div>
+                        <!-- end: INIT FROM JS OBJECT PANEL -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- start: EXTERNAL DATA PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-sitemap"></i>
+                                External data
+                                <div class="panel-tools">
+                                    <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-refresh" href="#">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-expand" href="#">
+                                        <i class="fa fa-resize-full"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-close" href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    This sample initializes the tree from a JSON request.
+                                </p>
+                                <div id="tree3"></div>
+                                <div class="widget">
+                                    Active node: <span id="echoActive">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end: EXTERNAL DATA PANEL -->
+                    </div>
+                    <div class="col-md-6">
+                        <!-- start: TREEVIEW WITH CHECKBOXES PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-sitemap"></i>
+                                Checkbox
+                                <div class="panel-tools">
+                                    <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-refresh" href="#">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-expand" href="#">
+                                        <i class="fa fa-resize-full"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-close" href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    This tree has <b>checkoxes and selectMode 1 (single-selection)</b> enabled.
+                                    <br>
+                                    A double-click handler selects a <i>document</i> node (not folders).
+                                    <br>
+                                    A keydown handler selects on [space].
+                                    <br>
+                                    The <code>checkbox</code> class name was customized, to display radio
+                                    buttons.
+                                    <br>
+                                </p>
+                                <div id="tree4"></div>
+                                <div>
+                                    Active node: <span id="echoActive1">-</span>
+                                </div>
+                                <div>
+                                    Selection: <span id="echoSelection1">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end: TREEVIEW WITH CHECKBOXES PANEL -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- start: MULTI-SELECTION PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-sitemap"></i>
+                                Multi-Selection
+                                <div class="panel-tools">
+                                    <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-refresh" href="#">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-expand" href="#">
+                                        <i class="fa fa-resize-full"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-close" href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    his tree has selectMode 2 (multi-selection) enabled.
+                                    A single-click handler selects the node.
+                                    A keydown handler selects on [space].
+                                </p>
+                                <div id="tree5"></div>
+                                <div>
+                                    Selected keys: <span id="echoSelection3">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end: MULTI-SELECTION PANEL -->
+                    </div>
+                    <div class="col-md-6">
+                        <!-- start: DRAG AND DROP PANEL -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-sitemap"></i>
+                                Drag-and-drop
+                                <div class="panel-tools">
+                                    <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-refresh" href="#">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-expand" href="#">
+                                        <i class="fa fa-resize-full"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-link panel-close" href="#">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <p class="description">
+                                    This sample uses Dynatree's built-in drag-and-drop feature to move nodes.
+                                    <br>
+                                    - A node may only be dragged under it's original parent.
+                                    <br>
+                                    - When dropped, the node is moved to the target.
+                                </p>
+                                <div id="tree6"></div>
+                            </div>
+                        </div>
+                        <!-- end: DRAG AND DROP PANEL -->
+                    </div>
+                </div>
+                <!-- end: PAGE CONTENT-->
+            </div>
+        </div>
+        <!-- end: PAGE -->
+    </div>
+    <!-- end: MAIN CONTAINER -->
+    <!-- build:section layout.footer --><!-- /build -->
+    <!-- build:section layout.sidebar --><!-- /build -->
+
+
+
+    <!-- start: MAIN JAVASCRIPTS -->
+    <!--[if lt IE 9]>
+              <script src="../../bower_components/respond/dest/respond.min.js"></script>
+              <script src="../../bower_components/Flot/excanvas.min.js"></script>
+              <script src="../../bower_components/jquery-1.x/dist/jquery.min.js"></script>
+              <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <!-- build:script resurces.jQuery --><!-- /build -->
+    <!--<![endif]-->
+    <!-- build:script bundle --><!-- /build -->
+    <!-- build:script main --><!-- /build -->
+    <!-- end: MAIN JAVASCRIPTS -->
+    <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <script src="assets/plugin/jquery-ui.custom.min.js"></script>
+    <script src="../../bower_components/jquery.dynatree/dist/jquery.dynatree.min.js"></script>
+    <script src="assets/js/min/ui-treeview.min.js"></script>
+    <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+            UITreeview.init();
+        });
+    </script>
+
+</body>
+</html>

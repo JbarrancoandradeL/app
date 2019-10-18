@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <!-- build:process -->
+    <title><%= title %></title>
+    <link rel="shortcut icon" href="<%= pathFavicon %>" />
+    <!-- /build -->
+    <!-- build:section layout.meta --><!-- /build -->
+    <!-- start: MAIN CSS -->
+    <!-- build:style googleFonts --><!-- /build -->
+    <!-- build:style bundle --><!-- /build -->
+    <!-- build:style main --><!-- /build -->
+    <!-- build:style mainResponsive --><!-- /build -->
+    <!-- build:style print [media="print"] --><!-- /build -->
+    <!-- build:style theme.light [id="skin_color"] --><!-- /build -->
+    <!-- end: MAIN CSS -->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+    
+</head>
+<body class="error-full-page rain-page">
+
+    <img class="rain-image" id="background" src="" />
+
+    <!-- start: PAGE -->
+    <div class="container">
+        <div class="row">
+            <!-- start: 404 -->
+            <div class="col-sm-12 page-error">
+                <div class="error-number teal">
+                    404
+                </div>
+                <div class="error-details col-sm-6 col-sm-offset-3">
+                    <h3>Oops! You are stuck at 404</h3>
+                    <p>
+                        Unfortunately the page you were looking for could not be found.
+                        <br>
+                        It may be temporarily unavailable, moved or no longer exist.
+                        <br>
+                        Check the URL you entered for any mistakes and try again.
+                        <br>
+                        <a href="index.html" class="btn btn-teal btn-return">
+                            Return home
+                        </a>
+                        <br>
+                        Still no luck?
+                        <br>
+                        Search for whatever is missing, or take a look around the rest of our site.
+                    </p>
+                    <form action="#">
+                        <div class="input-group">
+                            <input type="text" placeholder="keyword..." size="16" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-teal">
+                                    Search
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- end: 404 -->
+        </div>
+    </div>
+    <!-- end: PAGE -->
+    <!-- start: MAIN JAVASCRIPTS -->
+    <!--[if lt IE 9]>
+            <script src="../../bower_components/respond/dest/respond.min.js"></script>
+            <script src="../../bower_components/Flot/excanvas.min.js"></script>
+            <script src="../../bower_components/jquery-1.x/dist/jquery.min.js"></script>
+            <![endif]-->
+
+    <!--[if gte IE 9]><!-->
+    <!-- build:script resurces.jQuery --><!-- /build -->
+    <!--<![endif]-->
+    <!-- build:script bundle --><!-- /build -->
+    <!-- build:script main --><!-- /build -->
+    <!-- end: MAIN JAVASCRIPTS -->
+    <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <script src="../../bower_components/rainyday.js/dist/rainyday.min.js"></script>
+    <script src="assets/js/utility-error404.js"></script>
+    <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+            Error404.init();
+        });
+    </script>
+
+</body>
+</html>
