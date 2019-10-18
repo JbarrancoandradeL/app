@@ -2,6 +2,7 @@
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php72” package as the default “PHP” programming language.
+# jh
 <IfModule mime_module>
   
 </IfModule>
