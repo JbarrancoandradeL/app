@@ -521,12 +521,13 @@
                                             <span class="title">Ahorro Hormiga</span>
                                         </a>
                                     </li> 
-
+                                    <?php if($rol == 3) { ?>
                                     <li>
-                                        <a href="#">
+                                        <a href="resumen_deuda">
                                             <span class="title">Resumen Deudas</span>
                                         </a>
                                     </li> 
+                                    <?php } ?>
                                     
                                 </ul>
                             </li>

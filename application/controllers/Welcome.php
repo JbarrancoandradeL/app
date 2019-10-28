@@ -195,6 +195,14 @@ class Welcome extends CI_Controller {
 		$this->cargar_vistas('user_valoregresos',$rt);		
 	}
 
+
+	function resumen_deuda($value='') {		
+		$rt['vista_actual'] = "resumen_deuda";								
+		$this->cargar_vistas('resumen_deuda',$rt);		
+	}
+
+
+
 	// vista mi perfil
 	function mi_perfil($value='') {
 		$this->load->model('Model_usuario'); 
