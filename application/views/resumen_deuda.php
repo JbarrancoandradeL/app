@@ -1,5 +1,6 @@
 <link href="<?php echo base_url() ?>bower_components/datatables/media/css/dataTables.bootstrap.min.css" rel="stylesheet" />
 
+
 <div class="panel panel-default">                          
     <div class="panel-body">     
         
@@ -91,7 +92,14 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end: PRICING TABLE 1 PANEL -->
+                  
+
+
+
+
+        
+      </div>
+    </div>
 
     </div>
 </div>

@@ -191,6 +191,7 @@
                     </li>
                     <!-- end: TO-DO DROPDOWN-->
                     <!-- start: NOTIFICATION DROPDOWN -->
+                     <!--
                     <li class="dropdown ocultar">
                         <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="true" href="#">
                             <i class="clip-notification-2"></i>
@@ -303,7 +304,7 @@
                             </a>
                             </li>
                         </ul>
-                    </li>
+                    </li>-->
                     <!-- end: NOTIFICATION DROPDOWN -->
                     <!-- start: MESSAGE DROPDOWN -->
                     <li class="dropdown ocultar">
@@ -461,75 +462,123 @@
 
                         <li>
                             <a href="javascript:void(0)">
-                                <i class="clip-screen"></i>
+                                <i class="clip-user-5"></i>
                                 <span class="title"> FinAdvisor </span><i class="icon-arrow"></i>
                                 <span class="selected"></span>
                             </a>
+            
                             <ul class="sub-menu">
-                                <li>
-                                    <a href="user_cre_lim">
-                                        <span class="title"> Creencias </span>
-                                    </a>
-                                </li> 
+                               <li>
+                                   <a href="javascript:void(0)">
+                                   <span class="title">Estado Mental </span><i class="icon-arrow"></i>
+                                   <span class="selected"></span>
+                                   </a>
+                                   
+                                   <ul class="sub-menu">
+                                       <li>
+                                          <a href="user_cre_lim">
+                                              <i class="clip-balance"></i>
+                                              <span class="title">Test de creencias </span>
+                                          </a>
+                                        </li> 
+                                            
+                                        <li>
+                                           <a href="user_rp">
+                                           <i class="fa fa-envira"></i>
+                                              <span class="title"> Test de Prosperidad </span>
+                                         </a>
+                                       </li> 
+                                    
+                                   </ul>
+
+                               </li>
                                 
-                                <li>
-                                    <a href="user_rp">
-                                        <span class="title"> Rueda de la Prosperidad </span>
-                                    </a>
-                                </li> 
+                         
+                                
+                       
                             <li>
-                                <a href="javascript:;">Mapa de Riqueza <i class="icon-arrow"></i> </a>
 
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="user_valoractivos">
-                                            <span class="title"> Anotar Mis Activos </span>
-                                        </a>
-                                    </li>                              
-                                     <li>
-                                        <a href="user_deudas">
-                                            <span class="title"> Anotar Mis Deudas </span>
-                                        </a>
-                                    </li>    
-                              </ul>
-                            </li>
-                            
-
-                            <li>
-                                <a href="javascript:;">Plenitud Financiera <i class="icon-arrow"></i> </a>
+                                <a href="javascript:;">
+                                <i class="fa fa-money"></i> 
+                                <span>Mi flujo de caja</span> 
+                                
+                                </a>
 
                                 <ul class="sub-menu">
                                       <li>
                                         <a href="user_valoringresos">
-                                            <span class="title"> Anotar Mis Ingresos</span>
+                                            <span class="title">Entradas fijas</span>
                                         </a>
                                     </li>                             
                                     <li>
                                         <a href="user_valoregresos">
-                                            <span class="title"> Anotar Mis Egresos</span>
+                                            <span class="title">Gastos Fijos</span>
                                         </a>
                                     </li> 
                                     
                                     
                                     <li>
                                         <a href="user_valoringresos_ad">
-                                            <span class="title"> Ingresos Adicionales</span>
+                                            <span class="title"> Ingresos adicionales</span>
                                         </a>
                                     </li> 
+
+                                    <li>
+                                        <a href="resumen_deuda">
+                                            <span class="title">Mis Indicadores</span>
+                                        </a>
+                                    </li> 
+
+                                    
+                                </ul>
+
+                             
+                            </li>
+                            
+
+                            <li>
+                                <a href="javascript:;">Modelo de plenitud financiera <i class="fa fa-child"></i> </a>
+                                 
+
+
+                                <ul class="sub-menu">
+
+                                    
+                                    <li>
+                                        <a href="user_valoractivos">
+                                           <i class='clip-home-3'></i>
+                                            <span > Anotar Mis Activos </span>
+                                            
+                                        </a>
+                                    </li>    
+
+                                     <li>
+                                        <a href="user_deudas">
+                                            <i class='clip-banknote'></i>
+                                            <span class="title"> Anotar Mis Deudas </span>
+                                        </a>
+                                    </li> 
+
+
+
                                     <li>
                                         <a href="user_valoregresos_h">
-                                            <span class="title">Ahorro Hormiga</span>
+                                            <span class="title">Simulador ahorro Hormiga</span>
                                         </a>
-                                    </li> 
+                                    </li>   
+
+
                                     <?php if($rol == 3) { ?>
                                     <li>
                                         <a href="resumen_deuda">
-                                            <span class="title">Resumen Deudas</span>
+                                            <span class="title">Simulador plenitud financiera</span>
                                         </a>
                                     </li> 
                                     <?php } ?>
                                     
-                                </ul>
+                              </ul>
+ 
+                                
                             </li>
                             
                              
