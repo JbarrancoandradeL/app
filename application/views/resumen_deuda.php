@@ -1,13 +1,15 @@
 <link href="<?php echo base_url() ?>bower_components/datatables/media/css/dataTables.bootstrap.min.css" rel="stylesheet" />
 
+<div ng-app="myApp" ng-controller="myCtrl">
 
 <div class="panel panel-default">                          
     <div class="panel-body">     
         
     <!-- start: PRICING TABLE 1 PANEL -->
     <div class="panel panel-default">
+   
                         <div class="panel-heading">
-                            <i class="fa fa-external-link-square"></i> Simulacion de Deuda
+                            <i class="fa fa-external-link-square"></i> Simulacion de Deuda 
                             <div class="panel-tools">
                                 <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
                                 </a>
@@ -25,7 +27,7 @@
                             <div id="pricing_table_example1" class="row">
                                 <div class="col-sm-12">
                                     <div class="pricing-table col-sm-3 col-xs-12">
-                                        <h3>Resultados actuales<h1 currency>$ 50000000</h1> </h3>
+                                        <h3>Resultados actuales<h1 currency>$ 45000000</h1> </h3>
                                         <a href="" class="btn btn-green">
                                             Mas Detalles
                                         </a>
@@ -53,13 +55,13 @@
                                     </div>
 
                                     <div class="pricing-table col-sm-3 col-xs-12">
-                                        <h3>Simulador  <h1 currency>$ 50000000</h1> </h3>
+                                        <h3>Simulador  <h1 currency>$ 45000000</h1> </h3>
                                         <a href="" class="btn btn-green">
                                             Mas Detalles
                                         </a>
                                         <ul>
                                             <li>
-                                                <b>Tiempo total</b> 3 años
+                                                <b>Tiempo total</b> 1 año
                                             </li>
                                             <li>
                                                 <b>Total Intereses</b> $ 2450000
@@ -82,7 +84,7 @@
 
 
                                     <div class="pricing-table col-sm-3 col-xs-12">
-                                        <h3>Ahorro  <h1 currency>$ 50000000</h1> </h3>
+                                        <h3>Ahorro  <h1 currency>$ 45000000</h1> </h3>
                                      
                                         <ul>
                                             <li>
