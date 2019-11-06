@@ -202,6 +202,12 @@ class Welcome extends CI_Controller {
 	}
 
 
+	function mis_indicadores($value='') {		
+		$rt['vista_actual'] = "mis_indicadores";								
+		$this->cargar_vistas('mis_indicadores',$rt);		
+	}
+
+
 
 	// vista mi perfil
 	function mi_perfil($value='') {

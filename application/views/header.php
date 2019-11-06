@@ -492,10 +492,7 @@
                                    </ul>
 
                                </li>
-                                
-                         
-                                
-                       
+                     
                             <li>
 
                                 <a href="javascript:;">
@@ -524,7 +521,7 @@
                                     </li> 
 
                                     <li>
-                                        <a href="resumen_deuda">
+                                        <a href="mis_indicadores">
                                             <span class="title">Mis Indicadores</span>
                                         </a>
                                     </li> 
@@ -563,7 +560,7 @@
 
                                     <li>
                                         <a href="user_valoregresos_h">
-                                            <span class="title">Simulador ahorro Hormiga</span>
+                                            <span class="title">Simulador ahorro Hormiga  </span>
                                         </a>
                                     </li>   
 

@@ -25,25 +25,29 @@
                             <div id="pricing_table_example1" class="row">
                                 <div class="col-sm-12">
                                     <div class="pricing-table col-sm-3 col-xs-12">
-                                        <h3>Resultados Simulador hoy <h1 currency>$ 50000000</h1> </h3>
+                                        <h3>Resultados actuales<h1 currency>$ 50000000</h1> </h3>
                                         <a href="" class="btn btn-green">
                                             Mas Detalles
                                         </a>
                                         <ul>
                                             <li>
-                                                <b>Tiempo pago</b> 3 años
+                                                <b>Tiempo total</b> 3 años
                                             </li>
                                             <li>
-                                                <b>Intereses</b> $ 2450000
+                                                <b>Total Intereses</b> $ 2450000
                                             </li>
                                             <li>
                                                 <b>Capital</b> $ 400000
                                             </li>
                                             <li>
-                                                <b>Taza</b> 25.3 %
+                                                <b>Tasa de interés</b> 25.3 % E.A
                                             </li>
                                             <li>
-                                                <b>Gasto Hormiga</b> 0
+                                                <b>Ahorro Hormiga</b> 0
+                                            </li>
+
+                                            <li>
+                                                <b>Ingresos Extra</b> 0
                                             </li>
                                         </ul>
                                     </div>
@@ -55,19 +59,23 @@
                                         </a>
                                         <ul>
                                             <li>
-                                                <b>Tiempo pago</b> 1 año
+                                                <b>Tiempo total</b> 3 años
                                             </li>
                                             <li>
-                                                <b>Intereses</b> $ 1200000
+                                                <b>Total Intereses</b> $ 2450000
                                             </li>
                                             <li>
                                                 <b>Capital</b> $ 400000
                                             </li>
                                             <li>
-                                                <b>Taza</b> 21.0 %
+                                                <b>Tasa de interés</b> 25.3 % E.A
                                             </li>
                                             <li>
-                                                <b>Gasto Hormiga</b> $ 530000
+                                                <b>Ahorro Hormiga</b> $ 80000
+                                            </li>
+
+                                            <li>
+                                                <b>Ingresos Extra</b> 0
                                             </li>
                                         </ul>
                                     </div>
@@ -78,7 +86,7 @@
                                      
                                         <ul>
                                             <li>
-                                                <b>Tiempo </b> 2 año
+                                                <b>Tiempo total</b> 2 años
                                             </li>
                                             <li>
                                                 <b>Intereses</b> $ 1250000

@@ -90,7 +90,7 @@
 <!-- Scrips que cambian el titulo general de la página -->
 <script type="text/javascript"> 
     $("#TituloPagNav").html("<?php echo $titulo_paginacion; ?>");
-    $("#TituloPag").html("Flujo de dinero<small> <?php echo $titulo_pagina; ?></small>"); 
+    $("#TituloPag").html("Plenitud Financiera <small> <?php echo $titulo_pagina; ?></small>"); 
        
 </script>
 
