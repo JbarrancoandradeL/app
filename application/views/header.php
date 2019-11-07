@@ -557,7 +557,7 @@
                                                 </li>
 
 
-                                                
+
                                             </ul>
 
 
@@ -601,12 +601,34 @@
 
                             <li>
                                 <a href="javascript:void(0)">
+                                    <span class=" title">Mis indicadores</span><i class="icon-arrow"></i>
+                                    <span class="selected"></span>
+
+                                    <ul class='sub-menu'>
+
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-pie-chart"></i>
+                                                <span class="title">Indicadores </span>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+
+
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="javascript:void(0)">
                                     <span class="title">Modelo plenitud </span><i class="icon-arrow"></i>
                                     <span class="selected"></span>
 
 
                                     <ul class='sub-menu'>
-                             
+
                                         <li>
                                             <a href="user_valoringresos_ad">
                                                 <i class="fa fa-bitcoin"></i>
