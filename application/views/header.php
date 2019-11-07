@@ -557,11 +557,7 @@
                                                 </li>
 
 
-                                                <li>
-                                                    <a href="user_valoringresos_ad">
-                                                        <span class="title"> Ingresos adicionales</span>
-                                                    </a>
-                                                </li>
+                                                
                                             </ul>
 
 
@@ -610,9 +606,9 @@
 
 
                                     <ul class='sub-menu'>
-
+                             
                                         <li>
-                                            <a href="#">
+                                            <a href="user_valoringresos_ad">
                                                 <i class="fa fa-bitcoin"></i>
                                                 <span class="title">Simulador ingresos </span>
                                             </a>

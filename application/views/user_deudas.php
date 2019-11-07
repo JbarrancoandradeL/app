@@ -394,5 +394,6 @@
 
 <script type="text/javascript">
 	$("#TituloPagNav").html("Anotar mis deudas");
-    $("#TituloPag").html("Anotar mis deudas <small> </small>");
+    $("#TituloPag").html(" Mapa de riquezas <small> Anotar mis deudas</small>");
+ 
 </script>
