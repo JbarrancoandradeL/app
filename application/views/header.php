@@ -1,4 +1,3 @@
-
 <?php 
     $nombre1 = $this->session->userdata('nombre1');
     
@@ -30,7 +29,7 @@
 <script type="text/javascript" src="<?php echo base_url() ?>js/notify.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url() ?>js/general.js?v=<?php echo rand() ?>"></script>
 
- 
+
 
 
 <head>
@@ -39,7 +38,8 @@
     <!-- start: META -->
     <meta charset="utf-8" />
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta content="Responsive Admin Template build with Twitter Bootstrap and jQuery" name="description" />
@@ -49,17 +49,23 @@
 
     <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>css/general.css?v=<?php echo rand() ?>" />
 
-    <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Raleway:400,100,200,300,500,600,700,800,900/" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>bower_components/font-awesome/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet"
+        href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Raleway:400,100,200,300,500,600,700,800,900/" />
+    <link type="text/css" rel="stylesheet"
+        href="<?php echo base_url() ?>bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet"
+        href="<?php echo base_url() ?>bower_components/font-awesome/css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>assets/fonts/clip-font.min.css" />
     <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>bower_components/iCheck/skins/all.css" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>bower_components/sweetalert/dist/sweetalert.css" />
+    <link type="text/css" rel="stylesheet"
+        href="<?php echo base_url() ?>bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+    <link type="text/css" rel="stylesheet"
+        href="<?php echo base_url() ?>bower_components/sweetalert/dist/sweetalert.css" />
     <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>assets/css/main.min.css" />
     <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>assets/css/main-responsive.min.css" />
     <link type="text/css" rel="stylesheet" media="print" href="<?php echo base_url() ?>assets/css/print.min.css" />
-    <link type="text/css" rel="stylesheet" id="skin_color" href="<?php echo base_url() ?>assets/css/theme/light.min.css" />
+    <link type="text/css" rel="stylesheet" id="skin_color"
+        href="<?php echo base_url() ?>assets/css/theme/light.min.css" />
     <!-- end: MAIN CSS -->
     <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
     <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
@@ -75,15 +81,16 @@
             <div class="navbar-header">
                 <!-- start: RESPONSIVE MENU TOGGLER -->
                 <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-                <span class="clip-list-2"></span>
-            </button>
+                    <span class="clip-list-2"></span>
+                </button>
                 <!-- end: RESPONSIVE MENU TOGGLER -->
                 <!-- start: LOGO -->
-                <a class="navbar-brand" href="home">  
+                <a class="navbar-brand" href="home">
 
-                 <i class="ccircle-img"> <img src="<?php echo base_url() ?>img/logo.png" class="" alt="" style="height: 35px"> </i>
-                 SM International Group
-            </a>
+                    <i class="ccircle-img"> <img src="<?php echo base_url() ?>img/logo.png" class="" alt=""
+                            style="height: 35px"> </i>
+                    SM International Group
+                </a>
                 <!-- end: LOGO -->
             </div>
             <div class="navbar-tools">
@@ -91,7 +98,8 @@
                 <ul class="nav navbar-right">
                     <!-- start: TO-DO DROPDOWN -->
                     <li class="dropdown ocultar">
-                        <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="true" href="#">
+                        <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="true"
+                            href="#">
                             <i class="clip-list-5"></i>
                             <span class="badge"> 12</span>
                         </a>
@@ -105,14 +113,16 @@
                                         <li>
                                             <a class="todo-actions" href="javascript:void(0)">
                                                 <i class="fa fa-square-o"></i>
-                                                <span class="desc" style="opacity: 1; text-decoration: none;">Staff Meeting</span>
+                                                <span class="desc" style="opacity: 1; text-decoration: none;">Staff
+                                                    Meeting</span>
                                                 <span class="label label-danger" style="opacity: 1;"> today</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a class="todo-actions" href="javascript:void(0)">
                                                 <i class="fa fa-square-o"></i>
-                                                <span class="desc" style="opacity: 1; text-decoration: none;"> New frontend layout</span>
+                                                <span class="desc" style="opacity: 1; text-decoration: none;"> New
+                                                    frontend layout</span>
                                                 <span class="label label-danger" style="opacity: 1;"> today</span>
                                             </a>
                                         </li>
@@ -161,14 +171,16 @@
                                         <li>
                                             <a class="todo-actions" href="javascript:void(0)">
                                                 <i class="fa fa-square-o"></i>
-                                                <span class="desc" style="opacity: 1; text-decoration: none;">Staff Meeting</span>
+                                                <span class="desc" style="opacity: 1; text-decoration: none;">Staff
+                                                    Meeting</span>
                                                 <span class="label label-danger" style="opacity: 1;"> today</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a class="todo-actions" href="javascript:void(0)">
                                                 <i class="fa fa-square-o"></i>
-                                                <span class="desc" style="opacity: 1; text-decoration: none;"> New frontend layout</span>
+                                                <span class="desc" style="opacity: 1; text-decoration: none;"> New
+                                                    frontend layout</span>
                                                 <span class="label label-danger" style="opacity: 1;"> today</span>
                                             </a>
                                         </li>
@@ -184,14 +196,14 @@
                             </li>
                             <li class="view-all">
                                 <a href="javascript:void(0)">
-                                See all tasks <i class="fa fa-arrow-circle-o-right"></i>
-                            </a>
+                                    See all tasks <i class="fa fa-arrow-circle-o-right"></i>
+                                </a>
                             </li>
                         </ul>
                     </li>
                     <!-- end: TO-DO DROPDOWN-->
                     <!-- start: NOTIFICATION DROPDOWN -->
-                     <!--
+                    <!--
                     <li class="dropdown ocultar">
                         <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="true" href="#">
                             <i class="clip-notification-2"></i>
@@ -308,7 +320,8 @@
                     <!-- end: NOTIFICATION DROPDOWN -->
                     <!-- start: MESSAGE DROPDOWN -->
                     <li class="dropdown ocultar">
-                        <a class="dropdown-toggle" data-close-others="true" data-hover="dropdown" data-toggle="dropdown" href="#">
+                        <a class="dropdown-toggle" data-close-others="true" data-hover="dropdown" data-toggle="dropdown"
+                            href="#">
                             <i class="clip-bubble-3"></i>
                             <span class="badge"> 9</span>
                         </a>
@@ -323,11 +336,14 @@
                                             <a href="javascript:;">
                                                 <div class="clearfix">
                                                     <div class="thread-image">
-                                                        <img alt="" src="<?php echo base_url() ?>assets/images/avatar-2.jpg">
+                                                        <img alt=""
+                                                            src="<?php echo base_url() ?>assets/images/avatar-2.jpg">
                                                     </div>
                                                     <div class="thread-content">
                                                         <span class="author">Nicole Bell</span>
-                                                        <span class="preview">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</span>
+                                                        <span class="preview">Duis mollis, est non commodo luctus, nisi
+                                                            erat porttitor ligula, eget lacinia odio sem nec
+                                                            elit.</span>
                                                         <span class="time"> Just Now</span>
                                                     </div>
                                                 </div>
@@ -337,11 +353,15 @@
                                             <a href="javascript:;">
                                                 <div class="clearfix">
                                                     <div class="thread-image">
-                                                        <img alt="" src="<?php echo base_url() ?>assets/images/avatar-1.jpg">
+                                                        <img alt=""
+                                                            src="<?php echo base_url() ?>assets/images/avatar-1.jpg">
                                                     </div>
                                                     <div class="thread-content">
-                                                        <span class="author"><?php echo $nombre1 . " " . $apellido1 ?></span>
-                                                        <span class="preview">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</span>
+                                                        <span
+                                                            class="author"><?php echo $nombre1 . " " . $apellido1 ?></span>
+                                                        <span class="preview">Duis mollis, est non commodo luctus, nisi
+                                                            erat porttitor ligula, eget lacinia odio sem nec
+                                                            elit.</span>
                                                         <span class="time">2 mins</span>
                                                     </div>
                                                 </div>
@@ -351,11 +371,14 @@
                                             <a href="javascript:;">
                                                 <div class="clearfix">
                                                     <div class="thread-image">
-                                                        <img alt="" src="<?php echo base_url() ?>assets/images/avatar-3.jpg">
+                                                        <img alt=""
+                                                            src="<?php echo base_url() ?>assets/images/avatar-3.jpg">
                                                     </div>
                                                     <div class="thread-content">
                                                         <span class="author">Steven Thompson</span>
-                                                        <span class="preview">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</span>
+                                                        <span class="preview">Duis mollis, est non commodo luctus, nisi
+                                                            erat porttitor ligula, eget lacinia odio sem nec
+                                                            elit.</span>
                                                         <span class="time">8 hrs</span>
                                                     </div>
                                                 </div>
@@ -365,11 +388,15 @@
                                             <a href="javascript:;">
                                                 <div class="clearfix">
                                                     <div class="thread-image">
-                                                        <img alt="" src="<?php echo base_url() ?>assets/images/avatar-1.jpg">
+                                                        <img alt=""
+                                                            src="<?php echo base_url() ?>assets/images/avatar-1.jpg">
                                                     </div>
                                                     <div class="thread-content">
-                                                        <span class="author"><?php echo $nombre1 . " " . $apellido1 ?></span> 
-                                                        <span class="preview">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</span>
+                                                        <span
+                                                            class="author"><?php echo $nombre1 . " " . $apellido1 ?></span>
+                                                        <span class="preview">Duis mollis, est non commodo luctus, nisi
+                                                            erat porttitor ligula, eget lacinia odio sem nec
+                                                            elit.</span>
                                                         <span class="time">9 hrs</span>
                                                     </div>
                                                 </div>
@@ -379,11 +406,14 @@
                                             <a href="javascript:;">
                                                 <div class="clearfix">
                                                     <div class="thread-image">
-                                                        <img alt="" src="<?php echo base_url() ?>assets/images/avatar-5.jpg">
+                                                        <img alt=""
+                                                            src="<?php echo base_url() ?>assets/images/avatar-5.jpg">
                                                     </div>
                                                     <div class="thread-content">
                                                         <span class="author">Kenneth Ross</span>
-                                                        <span class="preview">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</span>
+                                                        <span class="preview">Duis mollis, est non commodo luctus, nisi
+                                                            erat porttitor ligula, eget lacinia odio sem nec
+                                                            elit.</span>
                                                         <span class="time">14 hrs</span>
                                                     </div>
                                                 </div>
@@ -394,16 +424,18 @@
                             </li>
                             <li class="view-all">
                                 <a href="pages_messages.html">
-                                See all messages <i class="fa fa-arrow-circle-o-right"></i>
-                            </a>
+                                    See all messages <i class="fa fa-arrow-circle-o-right"></i>
+                                </a>
                             </li>
                         </ul>
                     </li>
                     <!-- end: MESSAGE DROPDOWN -->
                     <!-- start: USER DROPDOWN -->
                     <li class="dropdown current-user">
-                        <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="true" href="#">
-                            <img src="<?php echo base_url() ?>img/user.png" class="circle-img" alt="" style="height: 32px">
+                        <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="true"
+                            href="#">
+                            <img src="<?php echo base_url() ?>img/user.png" class="circle-img" alt=""
+                                style="height: 32px">
                             <span class=""><?php echo $nombre1 . " " . $apellido1 ?></span>
                             <i class="clip-chevron-down"></i>
                         </a>
@@ -413,7 +445,7 @@
                                     <i class="clip-user-2"></i> &nbsp;Mi Perfil
                                 </a>
                             </li>
-                             
+
                             <li>
                                 <a href="login">
                                     <i class="clip-exit"></i> &nbsp;Cerrar Session
@@ -421,13 +453,13 @@
                             </li>
 
                         </ul>
-                        </li>
-                        <!-- end: USER DROPDOWN -->
-                        <!-- start: PAGE SIDEBAR TOGGLE -->
-                        <li class="ocultar">
-                            <a class="sb-toggle" href="#"><i class="fa fa-outdent"></i></a>
-                        </li>
-                        <!-- end: PAGE SIDEBAR TOGGLE -->
+                    </li>
+                    <!-- end: USER DROPDOWN -->
+                    <!-- start: PAGE SIDEBAR TOGGLE -->
+                    <li class="ocultar">
+                        <a class="sb-toggle" href="#"><i class="fa fa-outdent"></i></a>
+                    </li>
+                    <!-- end: PAGE SIDEBAR TOGGLE -->
                 </ul>
                 <!-- end: TOP NAVIGATION MENU -->
             </div>
@@ -458,130 +490,156 @@
 
                     <?php if($rol == 1 || $rol == 3) { ?>
 
-                    
 
-                        <li>
-                            <a href="javascript:void(0)">
-                                <i class="clip-user-5"></i>
-                                <span class="title"> FinAdvisor </span><i class="icon-arrow"></i>
-                                <span class="selected"></span>
-                            </a>
-            
-                            <ul class="sub-menu">
-                               <li>
-                                   <a href="javascript:void(0)">
-                                   <span class="title">Estado Mental </span><i class="icon-arrow"></i>
-                                   <span class="selected"></span>
-                                   </a>
-                                   
-                                   <ul class="sub-menu">
-                                       <li>
-                                          <a href="user_cre_lim">
-                                              <i class="clip-balance"></i>
-                                              <span class="title">Test de creencias </span>
-                                          </a>
-                                        </li> 
-                                            
-                                        <li>
-                                           <a href="user_rp">
-                                           <i class="fa fa-envira"></i>
-                                              <span class="title"> Test de Prosperidad </span>
-                                         </a>
-                                       </li> 
-                                    
-                                   </ul>
 
-                               </li>
-                     
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="clip-user-5"></i>
+                            <span class="title"> FinAdvisor </span><i class="icon-arrow"></i>
+                            <span class="selected"></span>
+                        </a>
+
+                        <ul class="sub-menu">
                             <li>
-
-                                <a href="javascript:;">
-                                <i class="fa fa-money"></i> 
-                                <span>Mi flujo de caja</span> 
-                                
+                                <a href="javascript:void(0)">
+                                    <span class="title">Mis creencias </span><i class="icon-arrow"></i>
+                                    <span class="selected"></span>
                                 </a>
 
                                 <ul class="sub-menu">
-                                      <li>
-                                        <a href="user_valoringresos">
-                                            <span class="title">Entradas fijas</span>
-                                        </a>
-                                    </li>                             
                                     <li>
-                                        <a href="user_valoregresos">
-                                            <span class="title">Gastos Fijos</span>
+                                        <a href="user_cre_lim">
+                                            <i class="clip-balance"></i>
+                                            <span class="title">Test de creencias </span>
                                         </a>
-                                    </li> 
-                                    
-                                    
-                                    <li>
-                                        <a href="user_valoringresos_ad">
-                                            <span class="title"> Ingresos adicionales</span>
-                                        </a>
-                                    </li> 
+                                    </li>
 
                                     <li>
-                                        <a href="mis_indicadores">
-                                            <span class="title">Mis Indicadores</span>
+                                        <a href="user_rp">
+                                            <i class="fa fa-envira"></i>
+                                            <span class="title"> Test de Prosperidad </span>
                                         </a>
-                                    </li> 
+                                    </li>
 
-                                    
                                 </ul>
 
-                             
                             </li>
-                            
+
+
+
 
                             <li>
-                                <a href="javascript:;">Modelo de plenitud financiera <i class="fa fa-child"></i> </a>
-                                 
+                                <a href="javascript:void(0)">
+                                    <span class="title">Situación actual </span><i class="icon-arrow"></i>
+                                    <span class="selected"></span>
 
 
-                                <ul class="sub-menu">
+                                    <ul class='sub-menu'>
 
-                                    
-                                    <li>
-                                        <a href="user_valoractivos">
-                                           <i class='clip-home-3'></i>
-                                            <span > Anotar Mis Activos </span>
-                                            
-                                        </a>
-                                    </li>    
+                                        <li>
 
-                                     <li>
-                                        <a href="user_deudas">
-                                            <i class='clip-banknote'></i>
-                                            <span class="title"> Anotar Mis Deudas </span>
-                                        </a>
-                                    </li> 
+                                            <a href="javascript:;">
+                                                <i class="fa fa-money"></i>
+                                                <span>Mi flujo de caja</span>
 
+                                            </a>
 
-
-                                    <li>
-                                        <a href="user_valoregresos_h">
-                                            <span class="title">Simulador ahorro Hormiga  </span>
-                                        </a>
-                                    </li>   
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="user_valoringresos">
+                                                        <span class="title">Entradas fijas</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="user_valoregresos">
+                                                        <span class="title">Gastos Fijos</span>
+                                                    </a>
+                                                </li>
 
 
-                                    <?php if($rol == 3) { ?>
-                                    <li>
-                                        <a href="resumen_deuda">
-                                            <span class="title">Simulador plenitud financiera</span>
-                                        </a>
-                                    </li> 
-                                    <?php } ?>
-                                    
-                              </ul>
- 
-                                
+                                                <li>
+                                                    <a href="user_valoringresos_ad">
+                                                        <span class="title"> Ingresos adicionales</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+
+                                        </li>
+
+
+                                        <li>
+
+                                            <a href="javascript:;">
+                                                <i class="fa fa-line-chart"></i>
+                                                <span>Mapa de riqueza</span>
+
+                                            </a>
+
+                                            <ul class="sub-menu">
+                                                
+                                                <li>
+                                                    <a href="user_valoractivos">
+                                                        <i class='clip-home-3'></i>
+                                                        <span> Mis Activos </span>
+
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="user_deudas">
+                                                        <i class='clip-clipboard'></i>
+                                                        <span class="title"> Inventario deudas </span>
+                                                    </a>
+                                                </li>
+
+
+                                            </ul>
+
+
+                                        </li>
+
+                                    </ul>
+
                             </li>
-                            
-                             
 
-                            </ul>                                                   
-                        </li> 
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <span class="title">Modelo plenitud  </span><i class="icon-arrow"></i>
+                                    <span class="selected"></span>
+
+
+                                    <ul class='sub-menu'>
+
+                                            <li>
+                                                <a href="#">
+                                                    <span class="title"> Simulador Ingresos pasivos </span>
+                                                </a>
+                                            </li>
+
+
+                                            <li>
+                                                <a href="user_valoregresos_h">
+                                                    <span class="title">Simulador ahorro Hormiga </span>
+                                                </a>
+                                            </li>
+
+
+                                            <?php if($rol == 3) { ?>
+                                            <li>
+                                                <a href="resumen_deuda">
+                                                    <span class="title">Simulador deudas</span>
+                                                </a>
+                                            </li>
+                                            <?php } ?>
+
+                                          
+                                    </ul>
+
+                            </li>
+
+                        </ul>
+                    </li>
                     <li>
                         <a href="javascript:void(0)">
                             <i class="clip-screen"></i>
@@ -593,13 +651,13 @@
                                 <a href="user_flujodedinero">
                                     <span class="title"> Flujo de Dinero</span>
                                 </a>
-                            </li>    
+                            </li>
                             <li>
                                 <a href="user_mapaderiqueza">
                                     <span class="title"> Mapa de Riqueza</span>
                                 </a>
-                            </li>    
-                            
+                            </li>
+
                         </ul>
                     </li>
 
@@ -620,40 +678,40 @@
                                     <span class="title"> Creencias</span>
                                 </a>
                             </li>
-                            
+
                             <li>
                                 <a href="preguntas_rp_admin">
                                     <span class="title"> Rueda de la prosperidad</span>
                                 </a>
                             </li>
-                             <li>
-                                <a href="activos_admin" >
+                            <li>
+                                <a href="activos_admin">
                                     <span class="title"> Activos</span>
                                 </a>
-                            </li>  
+                            </li>
                             <li>
-                                <a href="ingresos_admin" >
+                                <a href="ingresos_admin">
                                     <span class="title"> Ingresos</span>
                                 </a>
-                            </li>  
+                            </li>
                             <li>
-                                <a href="egresos_admin" >
+                                <a href="egresos_admin">
                                     <span class="title"> Egresos</span>
                                 </a>
-                            </li>   
+                            </li>
 
                             <li>
-                                <a href="eventos_admin" >
+                                <a href="eventos_admin">
                                     <span class="title"> Eventos</span>
                                 </a>
-                            </li>   
-                            
+                            </li>
+
                             <li>
-                                <a href="usuarios" >
+                                <a href="usuarios">
                                     <span class="title"> Usuarios</span>
                                 </a>
-                            </li>   
-                            
+                            </li>
+
                         </ul>
                     </li>
 
@@ -662,42 +720,43 @@
 
                     <?php if($rol == 1 || $rol == 2) { ?>
 
-                        <li>
-                            <a href="javascript:void(0)">
-                                <i class="clip-screen"></i>
-                                <span class="title"> Reportes </span><i class="icon-arrow"></i>
-                                <span class="selected"></span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="rep_admin_cre_lim">
-                                        <span class="title"> Creencias</span>
-                                    </a>
-                                </li>    
-                                
-                                <li>
-                                    <a href="rep_admin_mrp">
-                                        <span class="title"> Rueda de la prosperidad</span>
-                                    </a>
-                                </li>    
-                                
-                            </ul>
-                        </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="clip-screen"></i>
+                            <span class="title"> Reportes </span><i class="icon-arrow"></i>
+                            <span class="selected"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="rep_admin_cre_lim">
+                                    <span class="title"> Creencias</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="rep_admin_mrp">
+                                    <span class="title"> Rueda de la prosperidad</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
 
                     <?php } ?>
 
-                    
+
 
 
 
 
                     <li class="ocultar">
-                        <a href="http://www.cliptheme.com/preview/cliponeV2/Frontend/clip-one-template/clip-one/index.html" target="_blank">
+                        <a href="http://www.cliptheme.com/preview/cliponeV2/Frontend/clip-one-template/clip-one/index.html"
+                            target="_blank">
                             <i class="clip-cursor"></i>
                             <span class="title"> Frontend Theme </span><span class="selected"></span>
                         </a>
                     </li>
-                   
+
                 </ul>
                 <!-- end: MAIN NAVIGATION MENU -->
             </div>
@@ -712,8 +771,8 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    &times;
-                </button>
+                                &times;
+                            </button>
                             <h4 class="modal-title">Panel Configuration</h4>
                         </div>
                         <div class="modal-body">
@@ -721,11 +780,11 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">
-                    Close
-                </button>
+                                Close
+                            </button>
                             <button type="button" class="btn btn-primary">
-                    Save changes
-                </button>
+                                Save changes
+                            </button>
                         </div>
                     </div>
                     <!-- /.modal-content -->
@@ -750,9 +809,9 @@
                                 <div class="input-box">
                                     <div class="input">
                                         <select name="layout">
-                    <option value="default">Wide</option>
-                    <option value="boxed">Boxed</option>
-                </select>
+                                            <option value="default">Wide</option>
+                                            <option value="boxed">Boxed</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="box-title">
@@ -761,9 +820,9 @@
                                 <div class="input-box">
                                     <div class="input">
                                         <select name="orientation">
-                    <option value="default">Default</option>
-                    <option value="rtl">RTL</option>
-                </select>
+                                            <option value="default">Default</option>
+                                            <option value="rtl">RTL</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="box-title">
@@ -772,9 +831,9 @@
                                 <div class="input-box">
                                     <div class="input">
                                         <select name="header">
-                    <option value="fixed">Fixed</option>
-                    <option value="default">Default</option>
-                </select>
+                                            <option value="fixed">Fixed</option>
+                                            <option value="default">Default</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="box-title">
@@ -783,38 +842,48 @@
                                 <div class="input-box">
                                     <div class="input">
                                         <select name="footer">
-                    <option value="default">Default</option>
-                    <option value="fixed">Fixed</option>
-                </select>
+                                            <option value="default">Default</option>
+                                            <option value="fixed">Fixed</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="box-title">
                                     Backgrounds for Boxed Version
                                 </div>
                                 <div class="images boxed-patterns">
-                                    <a id="bg_style_1" href="#"><img alt="" src="<?php echo base_url() ?>assets/images/bg.png"></a>
-                                    <a id="bg_style_2" href="#"><img alt="" src="<?php echo base_url() ?>assets/images/bg_2.png"></a>
-                                    <a id="bg_style_3" href="#"><img alt="" src="<?php echo base_url() ?>assets/images/bg_3.png"></a>
-                                    <a id="bg_style_4" href="#"><img alt="" src="<?php echo base_url() ?>assets/images/bg_4.png"></a>
-                                    <a id="bg_style_5" href="#"><img alt="" src="<?php echo base_url() ?>assets/images/bg_5.png"></a>
+                                    <a id="bg_style_1" href="#"><img alt=""
+                                            src="<?php echo base_url() ?>assets/images/bg.png"></a>
+                                    <a id="bg_style_2" href="#"><img alt=""
+                                            src="<?php echo base_url() ?>assets/images/bg_2.png"></a>
+                                    <a id="bg_style_3" href="#"><img alt=""
+                                            src="<?php echo base_url() ?>assets/images/bg_3.png"></a>
+                                    <a id="bg_style_4" href="#"><img alt=""
+                                            src="<?php echo base_url() ?>assets/images/bg_4.png"></a>
+                                    <a id="bg_style_5" href="#"><img alt=""
+                                            src="<?php echo base_url() ?>assets/images/bg_5.png"></a>
                                 </div>
                                 <div class="box-title">
                                     5 Predefined Color Schemes
                                 </div>
                                 <div class="images icons-color">
-                                    <a id="light" href="#"><img class="active" alt="" src="<?php echo base_url() ?>assets/images/lightgrey.png"></a>
-                                    <a id="dark" href="#"><img alt="" src="<?php echo base_url() ?>assets/images/darkgrey.png"></a>
-                                    <a id="black-and-white" href="#"><img alt="" src="<?php echo base_url() ?>assets/images/blackandwhite.png"></a>
-                                    <a id="navy" href="#"><img alt="" src="<?php echo base_url() ?>assets/images/navy.png"></a>
-                                    <a id="green" href="#"><img alt="" src="<?php echo base_url() ?>assets/images/green.png"></a>
+                                    <a id="light" href="#"><img class="active" alt=""
+                                            src="<?php echo base_url() ?>assets/images/lightgrey.png"></a>
+                                    <a id="dark" href="#"><img alt=""
+                                            src="<?php echo base_url() ?>assets/images/darkgrey.png"></a>
+                                    <a id="black-and-white" href="#"><img alt=""
+                                            src="<?php echo base_url() ?>assets/images/blackandwhite.png"></a>
+                                    <a id="navy" href="#"><img alt=""
+                                            src="<?php echo base_url() ?>assets/images/navy.png"></a>
+                                    <a id="green" href="#"><img alt=""
+                                            src="<?php echo base_url() ?>assets/images/green.png"></a>
                                 </div>
                                 <div style="height:25px;line-height:25px; text-align: center">
                                     <a class="clear_style" href="#">
-                Clear Styles
-            </a>
+                                        Clear Styles
+                                    </a>
                                     <a class="save_style" href="#">
-                Save Styles
-            </a>
+                                        Save Styles
+                                    </a>
                                 </div>
                             </div>
                             <div class="style-toggle open">
@@ -850,5 +919,3 @@
                         <!-- end: PAGE TITLE & BREADCRUMB -->
                     </div>
                 </div>
-                
-
