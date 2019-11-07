@@ -577,7 +577,7 @@
                                             </a>
 
                                             <ul class="sub-menu">
-                                                
+
                                                 <li>
                                                     <a href="user_valoractivos">
                                                         <i class='clip-home-3'></i>
@@ -605,38 +605,57 @@
 
                             <li>
                                 <a href="javascript:void(0)">
-                                    <span class="title">Modelo plenitud  </span><i class="icon-arrow"></i>
+                                    <span class="title">Modelo plenitud </span><i class="icon-arrow"></i>
                                     <span class="selected"></span>
 
 
                                     <ul class='sub-menu'>
 
-                                            <li>
-                                                <a href="#">
-                                                    <span class="title"> Simulador Ingresos pasivos </span>
-                                                </a>
-                                            </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-bitcoin"></i>
+                                                <span class="title">Simulador ingresos </span>
+                                            </a>
+                                        </li>
 
 
-                                            <li>
-                                                <a href="user_valoregresos_h">
-                                                    <span class="title">Simulador ahorro Hormiga </span>
-                                                </a>
-                                            </li>
+                                        <li>
+                                            <a href="user_valoregresos_h">
+                                                <i class="clip-bulb"></i>
+                                                <span class="title">Simulador ahorro </span>
+                                            </a>
+                                        </li>
 
 
-                                            <?php if($rol == 3) { ?>
-                                            <li>
-                                                <a href="resumen_deuda">
-                                                    <span class="title">Simulador deudas</span>
-                                                </a>
-                                            </li>
-                                            <?php } ?>
+                                        <?php if($rol == 3) { ?>
+                                        <li>
+                                            <a href="resumen_deuda">
+                                                <i class="fa fa-child"></i>
+                                                <span class="title">Simulador deudas</span>
+                                            </a>
+                                        </li>
+                                        <?php } ?>
 
-                                          
+
                                     </ul>
 
                             </li>
+
+
+
+
+                            <li>
+
+                                <a href="javascript:;">
+
+                                    <span>Seguimiento</span><i class="icon-arrow"></i>
+
+                                </a>
+
+
+
+                            </li>
+
 
                         </ul>
                     </li>
