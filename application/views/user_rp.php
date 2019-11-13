@@ -32,6 +32,7 @@
 
 
 
+
 <!-- Parrafo -->
 
    <div class="panel" style=" padding-left: 10px; color: #797979">
@@ -59,9 +60,9 @@ Ahora es momento de enfocarnos en aquellas áreas que cuentan con una discrepanc
    </div>
 
  
-
-    <script src="<?php echo base_url() ?>js/chart.bundle.min.js"></script>
-
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis=" crossorigin="anonymous"></script>
+   <!-- <script src="<?php echo base_url() ?>js/chart.bundle.min.js"></script>-->
+   <script> console.log("<?php echo base_url() ?>/js/chart.bundle.min.js") </script>
  
     <!-- Scrips que cambian el titulo general de la página -->
     <script type="text/javascript"> 
@@ -356,7 +357,7 @@ Ahora es momento de enfocarnos en aquellas áreas que cuentan con una discrepanc
                 } else {
                     // MOSTRAR LA TABLA
                         
-                    // console.log(response.data['tabla_usuario']['grafica']);
+                 console.log(response.data['tabla_usuario']['grafica']);
 
                     $scope.lista_sugeridos = response.data['tabla_usuario']['lista_sugeridos'];
 
@@ -390,10 +391,10 @@ Ahora es momento de enfocarnos en aquellas áreas que cuentan con una discrepanc
 
         $scope.pintar_grafica = function (categorias, valor_presente, valor_anhelado) {
                 
-               // console.log(categorias);
-                // console.log("ACTUAL: " + valor_presente);
-                // console.log("ANHELADO: " + valor_anhelado);
-
+                console.log(categorias);
+                 console.log("ACTUAL: " + valor_presente);
+                 console.log("ANHELADO: " + valor_anhelado);
+               console.log('entre aquui');
                 var marksData = {
                   labels: categorias,
                   datasets: [{

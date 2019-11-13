@@ -201,12 +201,9 @@ class Welcome extends CI_Controller {
 		$this->cargar_vistas('resumen_deuda',$rt);		
 	}
 
-
-	function mis_indicadores($value='') {		
-		$rt['vista_actual'] = "mis_indicadores";								
-		$this->cargar_vistas('mis_indicadores',$rt);		
-	}
-
+//	$this->load->model('Model_usuario'); 
+//$rt = $this->Model_usuario->get_users_by_code();
+//	echo json_encode( $rt );
 
 
 	// vista mi perfil
@@ -287,6 +284,17 @@ class Welcome extends CI_Controller {
 		$rt = $this->Model_preguntasrp->get_preguntas_rp_user();
 		echo json_encode( $rt );
 	}
+
+	function mis_indicadores($value='') {
+		$this->cargar_vistas("mis_indicadores"); 
+	}
+
+	function mis_indicadores_user($value='') {
+		$this->load->model('Model_indicadores'); 
+		$rt = $this->Model_indicadores->get_data_indicadores();
+		echo json_encode( $rt );
+	}
+
 	 
 
 	function save_update_categoriaMRP ($value='') {

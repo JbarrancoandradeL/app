@@ -1,19 +1,19 @@
-<?php 
-    $nombre1 = $this->session->userdata('nombre1');
-    
-    $apellido1 = $this->session->userdata('apellido1');
+<?php
+$nombre1 = $this->session->userdata('nombre1');
 
-    $codigo_perfil = $this->session->userdata('codigo_perfil');
+$apellido1 = $this->session->userdata('apellido1');
 
-   
+$codigo_perfil = $this->session->userdata('codigo_perfil');
+
+
+$rol = 1;
+if ($codigo_perfil == 'PE0483143841') {
     $rol = 1;
-    if($codigo_perfil == 'PE0483143841') {
-        $rol = 1;
-    } else if($codigo_perfil == 'PE0483143842') {
-        $rol = 2;
-    } else {
-         $rol = 3;
-    }
+} else if ($codigo_perfil == 'PE0483143842') {
+    $rol = 2;
+} else {
+    $rol = 3;
+}
 // $rol = 3;
 ?>
 
@@ -201,123 +201,7 @@
                             </li>
                         </ul>
                     </li>
-                    <!-- end: TO-DO DROPDOWN-->
-                    <!-- start: NOTIFICATION DROPDOWN -->
-                    <!--
-                    <li class="dropdown ocultar">
-                        <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="true" href="#">
-                            <i class="clip-notification-2"></i>
-                            <span class="badge"> 11</span>
-                        </a>
-                        <ul class="dropdown-menu notifications">
-                            <li>
-                                <span class="dropdown-menu-title"> You have 11 notifications</span>
-                            </li>
-                            <li>
-                                <div class="drop-down-wrapper">
-                                    <ul>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-primary"><i class="fa fa-user"></i></span>
-                                                <span class="message"> New user registration</span>
-                                                <span class="time"> 1 min</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-success"><i class="fa fa-comment"></i></span>
-                                                <span class="message"> New comment</span>
-                                                <span class="time"> 7 min</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-success"><i class="fa fa-comment"></i></span>
-                                                <span class="message"> New comment</span>
-                                                <span class="time"> 8 min</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-success"><i class="fa fa-comment"></i></span>
-                                                <span class="message"> New comment</span>
-                                                <span class="time"> 16 min</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-primary"><i class="fa fa-user"></i></span>
-                                                <span class="message"> New user registration</span>
-                                                <span class="time"> 36 min</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-warning"><i class="fa fa-shopping-cart"></i></span>
-                                                <span class="message"> 2 items sold</span>
-                                                <span class="time"> 1 hour</span>
-                                            </a>
-                                        </li>
-                                        <li class="warning">
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-danger"><i class="fa fa-user"></i></span>
-                                                <span class="message"> User deleted account</span>
-                                                <span class="time"> 2 hour</span>
-                                            </a>
-                                        </li>
-                                        <li class="warning">
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-danger"><i class="fa fa-shopping-cart"></i></span>
-                                                <span class="message"> Transaction was canceled</span>
-                                                <span class="time"> 6 hour</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-success"><i class="fa fa-comment"></i></span>
-                                                <span class="message"> New comment</span>
-                                                <span class="time"> yesterday</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-primary"><i class="fa fa-user"></i></span>
-                                                <span class="message"> New user registration</span>
-                                                <span class="time"> yesterday</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-primary"><i class="fa fa-user"></i></span>
-                                                <span class="message"> New user registration</span>
-                                                <span class="time"> yesterday</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-success"><i class="fa fa-comment"></i></span>
-                                                <span class="message"> New comment</span>
-                                                <span class="time"> yesterday</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0)">
-                                                <span class="label label-success"><i class="fa fa-comment"></i></span>
-                                                <span class="message"> New comment</span>
-                                                <span class="time"> yesterday</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="view-all">
-                                <a href="javascript:void(0)">
-                                See all notifications <i class="fa fa-arrow-circle-o-right"></i>
-                            </a>
-                            </li>
-                        </ul>
-                    </li>-->
-                    <!-- end: NOTIFICATION DROPDOWN -->
+
                     <!-- start: MESSAGE DROPDOWN -->
                     <li class="dropdown ocultar">
                         <a class="dropdown-toggle" data-close-others="true" data-hover="dropdown" data-toggle="dropdown"
@@ -488,7 +372,7 @@
                         </a>
                     </li>
 
-                    <?php if($rol == 1 || $rol == 3) { ?>
+                    <?php if ($rol == 1 || $rol == 3) { ?>
 
 
 
@@ -536,33 +420,6 @@
 
                                     <ul class='sub-menu'>
 
-                                        <li>
-
-                                            <a href="javascript:;">
-                                                <i class="fa fa-money"></i>
-                                                <span>Mi flujo de caja</span>
-
-                                            </a>
-
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a href="user_valoringresos">
-                                                        <span class="title">Entradas fijas</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="user_valoregresos">
-                                                        <span class="title">Gastos Fijos</span>
-                                                    </a>
-                                                </li>
-
-
-
-                                            </ul>
-
-
-                                        </li>
-
 
                                         <li>
 
@@ -595,6 +452,35 @@
 
                                         </li>
 
+
+                                        <li>
+
+                                            <a href="javascript:;">
+                                                <i class="fa fa-money"></i>
+                                                <span>Mi flujo de caja</span>
+
+                                            </a>
+
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="user_valoringresos">
+                                                        <span class="title">Entradas fijas</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="user_valoregresos">
+                                                        <span class="title">Gastos Fijos</span>
+                                                    </a>
+                                                </li>
+
+
+
+                                            </ul>
+
+
+                                        </li>
+
+
                                     </ul>
 
                             </li>
@@ -607,7 +493,7 @@
                                     <ul class='sub-menu'>
 
                                         <li>
-                                            <a href="#">
+                                            <a href="mis_indicadores">
                                                 <i class="fa fa-pie-chart"></i>
                                                 <span class="title">Indicadores </span>
                                             </a>
@@ -645,7 +531,7 @@
                                         </li>
 
 
-                                        <?php if($rol == 3) { ?>
+                                        <?php if ($rol == 3) { ?>
                                         <li>
                                             <a href="resumen_deuda">
                                                 <i class="fa fa-child"></i>
@@ -701,7 +587,7 @@
                     <?php } ?>
 
 
-                    <?php if($rol == 1) { ?>
+                    <?php if ($rol == 1) { ?>
 
                     <li>
                         <a href="javascript:void(0)">
@@ -755,7 +641,7 @@
                     <?php } ?>
 
 
-                    <?php if($rol == 1 || $rol == 2) { ?>
+                    <?php if ($rol == 1 || $rol == 2) { ?>
 
                     <li>
                         <a href="javascript:void(0)">
