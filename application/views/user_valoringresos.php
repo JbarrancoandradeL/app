@@ -122,7 +122,7 @@
 <!-- Scrips que cambian el titulo general de la página -->
 <script type="text/javascript"> 
     $("#TituloPagNav").html("<?php echo $titulo_paginacion; ?>");
-    $("#TituloPag").html("Flujo de dinero<small> Anotar mis Ingresos <?php if($vista_actual == "ingresos_ad") echo "Adicionales"; ?> </small>");   
+    $("#TituloPag").html("Simulador flujo de dinero<small> Anotar mis Ingresos <?php if($vista_actual == "ingresos_ad") echo "Adicionales"; ?> </small>");   
 </script>
 <script type="text/javascript">
        

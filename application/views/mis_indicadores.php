@@ -32,12 +32,12 @@
                                 </thead>
                                 <tbody>
                                     <tr ng-repeat="x in names">
-                                        <td>{{x.NvlEndeuda}}</td>
+                                        <td >{{((x.TotalDeuda / x.TotalAct)*100).toFixed(2)}} %</td>
                                         <td>
-                                            {{x.riqueza}}
+                                            {{x.TotalAct - x.TotalDeuda | currency:"COP $" }} 
                                         </td>
-                                        <td> {{x.FlujoCaja}}</td>
-                                        <td>{{x.indiceDeuda}}</td>
+                                        <td> {{x.TotalIng - x.TotalEgre  | currency:"COP $" }}</td>
+                                        <td>0</td>
 
                                     </tr>
 
@@ -70,6 +70,8 @@
         $scope.lista_sugeridos = [];
         $scope.preg_show = 0;
 
+		$scope.currency = 'USD'
+
         $("#div_espere").removeClass("ocultar");
         $("#div_lista").addClass("ocultar");
         $("#div_tabla").addClass("ocultar");
@@ -78,7 +80,7 @@
             
             $http({ method: 'POST', url: 'mis_indicadores_user' }).then(function successCallback(response) {
                 console.log(response.data);
-                $scope.names = response.data.reporte
+                $scope.names = response.data.Resources
             
 
 

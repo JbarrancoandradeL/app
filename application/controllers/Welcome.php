@@ -207,6 +207,18 @@ class Welcome extends CI_Controller {
 	  echo json_encode( $rt );
 	}
 
+	function mis_tab_amortizacion($value='') {		
+		$rt['vista_actual'] = "mis_tab_amortizacion";								
+		$this->cargar_vistas('mis_tab_amortizacion',$rt);		
+	}
+
+
+	function mis_tab_amortizacion_data($value='') {		
+		$this->load->model('Model_Amortizacion');
+		$rt = $this->Model_Amortizacion->get_data_amortizacion_all();
+		echo json_encode( $rt );
+	  }
+
 /*
 	function mis_indicadores_user($value='') {
 		$this->load->model('Model_indicadores'); 

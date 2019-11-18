@@ -27,6 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //$config['base_url'] = 'https://finadvisor.lideresextraordinarios.com/';
 $config['base_url'] = '/App';
 
+
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -38,6 +39,7 @@ $config['base_url'] = '/App';
 |
 */
 $config['index_page'] = 'index.php';
+//$config['index_page'] = "";
 
 /*
 |--------------------------------------------------------------------------

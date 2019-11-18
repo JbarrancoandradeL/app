@@ -528,6 +528,14 @@ if ($codigo_perfil == 'PE0483143841') {
                                                 <i class="clip-bulb"></i>
                                                 <span class="title">Simulador ahorro </span>
                                             </a>
+										</li>
+										
+
+										<li>
+                                            <a href="mis_tab_amortizacion">
+                                               
+                                                <span class="title">amortizacion </span>
+                                            </a>
                                         </li>
 
 
